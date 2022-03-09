@@ -13,7 +13,7 @@ const Inicio = () => {
     {libros != null ? (
       libros.map(libro => (
         <div key={libro.id}>
-          <h2>Libro</h2>
+          <a href={`/Libro/${libro.id}`}>{libro.titulo}</a>
         </div>
       ))
     ) : ('no hay libros')}
